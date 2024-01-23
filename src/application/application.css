@@ -1,0 +1,272 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+/* 
+#D2D0F5
+#FAF7FB
+#F2E7F8
+#C0B6FF
+#D7C6D8
+*/
+
+
+.root {
+    -fx-background-color: #ffffff;
+}
+
+.body{
+
+/* width */
+-fx-pref-width: 100%;
+/* background */
+
+-fx-background-color: black;
+}
+.button {
+    -fx-background-color: #2596be;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 3px;
+    
+}
+
+.button:hover {
+    -fx-background-color: #3ba1c5;
+
+}
+
+.button:pressed {
+    -fx-background-color: #51abcb;
+}
+
+.side-bar {
+    -fx-background-color: #0b2d39;
+}
+
+.side-bar .button {
+    -fx-background-color: #0b2d39;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.side-bar .button:hover {
+    -fx-background-color: #3ba1c5;
+}
+
+.side-bar .button:pressed {
+    -fx-background-color: #0b2d39;
+}
+
+.side-bar .button:disabled {
+    -fx-background-color: #0b2d39;
+}
+
+
+
+
+
+.header{
+    -fx-background-color: #2596be;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    
+    /* width */
+    /* -fx-min-width: 100% */
+    -fx-pref-width: 100%;
+
+}
+
+
+.main{
+
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    /* -fx-padding: 10px 10px 10px 10px; */
+    
+
+
+
+
+}
+
+.table-view{
+    -fx-alignment: center;
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+
+}
+
+
+.table-view-element{
+ -fx-alignment: center;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    
+
+}
+.the-table-view {
+    -fx-background-color: #e9f5f9;
+}
+
+.column-header {
+    -fx-background-color: #3ba1c5;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+ .table-row-cell:odd {
+    -fx-background-color: #d3eaf2;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2596be;
+    -fx-text-fill: #ffffff;
+}
+
+
+.dashboard-element{
+    /* border-radius */
+    -fx-background-radius: 0;
+    -fx-border-radius: 5px;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    
+
+}
+
+.edit-button{
+    /* waring background color */
+    -fx-background-color:  orange;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 3px;
+    
+
+}
+
+
+.form {
+
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+
+
+
+}
+
+.form-field{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+
+
+}
+
+.select{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    /* padding */
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-border-color: #2596be;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    /* -fx-font-size: 14px; */
+    /* -fx-font-weight: bold; */
+}
+
+
+

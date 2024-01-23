@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="117.0" layoutX="282.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" styleClass="dashboard-element" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="117.0" layoutX="284.0" layoutY="284.0" stroke="BLACK" strokeType="INSIDE" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="117.0" layoutX="610.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="117.0" layoutX="936.0" layoutY="137.0" stroke="BLACK" strokeType="INSIDE" width="263.0" />
+      <Text layoutX="294.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre de docteurs">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nbDocteurs" layoutX="305.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="619.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre d'infirmiers">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="948.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre de malades">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="296.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="nombre de services">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nbServices" layoutX="296.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nbInfirmiers" layoutX="625.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="nbMalades" layoutX="948.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="59.0" fitWidth="68.0" layoutX="469.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/—Pngtree—cloak%20doctor_2728545.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="68.0" layoutX="471.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/pngegg%20(4).png" />
+         </image></ImageView>
+      <ImageView fitHeight="59.0" fitWidth="68.0" layoutX="1122.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/pngegg%20(2).png" />
+         </image></ImageView>
+      <ImageView fitHeight="59.0" fitWidth="68.0" layoutX="795.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/pngegg%20(3).png" />
+         </image>
+      </ImageView>
+    
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>

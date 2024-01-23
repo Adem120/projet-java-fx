@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SurveillancesController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <TableView fx:id="tableView" layoutX="255.0" layoutY="153.0" prefHeight="200.0" prefWidth="867.0" styleClass="the-table-view" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="138.0">
+        <columns>
+          <TableColumn fx:id="colcodeServeillance" prefWidth="137.0" text="codeServeillance" />
+            <TableColumn fx:id="colheureDebut" prefWidth="187.0" text="heureDebut" />
+            <TableColumn fx:id="colheureFin" prefWidth="123.0" text="heureFin" />
+            <TableColumn fx:id="colcodeInfirmier" prefWidth="123.0" text="codeInfirmier" />
+            <TableColumn fx:id="colnumSalle" prefWidth="123.0" text="numSalle" />
+        </columns>
+      </TableView>
+      <Button layoutX="928.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleAjoutSalle" text="+ Ajouter une surveillance" />
+      <Text layoutX="255.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Surveillances">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>

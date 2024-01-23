@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DocteursController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <TableView fx:id="tableView" layoutX="255.0" layoutY="153.0" prefHeight="234.0" prefWidth="993.0" styleClass="the-table-view" AnchorPane.leftAnchor="255.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="colprenom" prefWidth="84.0" text="prenom" />
+            <TableColumn fx:id="coladresse" prefWidth="94.0" text="adresse" />
+            <TableColumn fx:id="coldateNaiss" prefWidth="96.0" styleClass="the-column-header" text="dateNaiss " />
+            <TableColumn fx:id="colnumTel" prefWidth="140.0" text="numTel" />
+            <TableColumn fx:id="colspecialite" prefWidth="95.0" text="specialite" />
+            <TableColumn fx:id="colemail" prefWidth="211.0" text="email" />
+            <TableColumn fx:id="colserviceAffecte" prefWidth="176.0" text="service Affecté" />
+        </columns>
+      </TableView>
+      <Button layoutX="1087.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleAjoutDocteur" text="+ Ajouter un docteur" />
+      <Text layoutX="255.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des docteurs">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>

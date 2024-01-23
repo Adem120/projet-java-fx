@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="774.0" prefWidth="1120.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SidebarController">
+   <children>
+      <GridPane layoutX="1.0" layoutY="90.0" prefHeight="737.0" prefWidth="239.0" styleClass="side-bar" AnchorPane.bottomAnchor="-53.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="90.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDisconnect" prefHeight="51.0" prefWidth="234.0" text="deconnexion" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#handleDocteursButton" prefHeight="51.0" prefWidth="234.0" text="Docteurs" GridPane.rowIndex="1" />
+            <Button fx:id="infiermierbtn" mnemonicParsing="false" onAction="#handleInfirmiersButton" prefHeight="51.0" prefWidth="234.0" text="Infirmiers" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleSallesButton" prefHeight="51.0" prefWidth="234.0" text="Salles" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#handleSurveillancesButton" prefHeight="51.0" prefWidth="234.0" text="Surveillances" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleMaladesButton" prefHeight="51.0" prefWidth="234.0" styleClass="side-bar" text="Malades" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#handleServicesButton" prefHeight="51.0" prefWidth="234.0" text="Services" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleDashboardButton" prefHeight="59.0" prefWidth="232.0" text="Tableau de bord" />
+         </children>
+      </GridPane>
+      <GridPane prefHeight="87.0" prefWidth="1120.0" style="-fx-min-width: 100%;" styleClass="header" stylesheets="@../application/application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="210.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="0.0" percentWidth="99.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="979.0" GridPane.columnIndex="1">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="Yassine Ben Jeddou" />
+                        <Text fx:id="role" strokeType="OUTSIDE" strokeWidth="0.0" text="docteur" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="59.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/kindpng_109847.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="56.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/pngegg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <AnchorPane fx:id="contentPane" layoutX="237.0" layoutY="89.0" prefHeight="737.0" prefWidth="1019.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-52.0" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="89.0" />
+   </children>
+</AnchorPane>

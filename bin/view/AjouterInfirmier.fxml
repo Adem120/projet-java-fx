@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterInfirmierController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <Text layoutX="255.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un infirmier">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="371.0" layoutY="168.0" prefHeight="514.0" prefWidth="756.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="numTel" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="prenom" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="grade" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="password" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="adresse" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="nom">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="email" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <Label text="date naissance" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <TextField fx:id="nom" styleClass="form-field" GridPane.columnIndex="1" />
+            <TextField fx:id="prenom" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="numTel" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="grade" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="adresse" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="email" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="password" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <DatePicker fx:id="dateNaiss" prefHeight="31.0" prefWidth="448.0" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="salaire" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Label>
+            <TextField fx:id="salaire" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button layoutX="371.0" layoutY="708.0" mnemonicParsing="false" onAction="#handleValiderAjout" text="Valider" />
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>

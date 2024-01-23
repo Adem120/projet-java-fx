@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterSalleController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <Text layoutX="255.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une salle">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="404.0" layoutY="168.0" prefHeight="514.0" prefWidth="723.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="nombre de lit" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></Label>
+            <Label text="numero salle">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></Label>
+            <TextField fx:id="numS" styleClass="form-field" GridPane.columnIndex="1" />
+            <TextField fx:id="nbLits" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="appartient au service" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font></Label>
+            <ComboBox fx:id="service" prefHeight="31.0" prefWidth="448.0" promptText="selectionner un service" styleClass="form-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleValiderAjout" text="Valider" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>

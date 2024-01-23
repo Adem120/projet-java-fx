@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="877.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MaladesController">
+   <children>
+   
+     <!-- Include the sidebar -->
+       <fx:include source="SideBarAndHeader.fxml" />
+      <TableView fx:id="tableView" layoutX="255.0" layoutY="349.0" prefHeight="200.0" prefWidth="991.0" styleClass="the-table-view" AnchorPane.leftAnchor="255.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="107.0" text="nom" />
+            <TableColumn fx:id="colprenom" prefWidth="137.0" text="prenom" />
+            <TableColumn fx:id="coladresse" prefWidth="175.0" text="adresse" />
+            <TableColumn fx:id="colnumTel" prefWidth="177.0" text="numTel" />
+            <TableColumn fx:id="colDocteur" prefWidth="185.0" text="soigné par" />
+            <TableColumn fx:id="colDateVisite" prefWidth="187.0" text="date visite" />
+        </columns>
+      </TableView>
+      <Button layoutX="1090.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleAjoutMalade" text="+ Ajouter un malade" />
+      <Text layoutX="255.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des malades">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <Label layoutX="255.0" layoutY="202.0" text="filtrer par docteur :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fDocteurs" layoutX="409.0" layoutY="199.0" prefHeight="31.0" prefWidth="212.0" promptText="selectionnez un docteur" />
+      <Button fx:id="filtreBtn" layoutX="630.0" layoutY="198.0" mnemonicParsing="false" onAction="#filtrerParDocteur" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: green;" text="filtrer" />
+      <Button fx:id="filtreBtnS" layoutX="632.0" layoutY="250.0" mnemonicParsing="false" onAction="#filtrerParService" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: green;" text="filtrer" />
+      <ComboBox fx:id="fService" layoutX="411.0" layoutY="251.0" prefHeight="31.0" prefWidth="212.0" promptText="selectionnez un service" />
+      <Label layoutX="257.0" layoutY="254.0" text="filtrer par service :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="304.0" text="filtrer par date :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="filtreBtnSDate" layoutX="632.0" layoutY="300.0" mnemonicParsing="false" onAction="#filtrerParDate" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: green;" text="filtrer" />
+      <DatePicker fx:id="fDate" layoutX="412.0" layoutY="301.0" prefHeight="31.0" prefWidth="212.0" />
+      <Button fx:id="rechercheBtn" layoutX="630.0" layoutY="151.0" mnemonicParsing="false" onAction="#rechercherParNom" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: green;" text="rechercher" />
+      <Label layoutX="255.0" layoutY="155.0" text="rechercher par nom:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rechercheField" layoutX="411.0" layoutY="152.0" prefHeight="31.0" prefWidth="212.0" />
+      <GridPane alignment="CENTER" layoutX="465.0" layoutY="602.0" prefHeight="161.0" prefWidth="573.0" style="-fx-background-color: #2596be; -fx-padding: 10px;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="167.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="109.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="code docteur" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="code malade" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="    date visite" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="     liste medicaments" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="code ordonnance">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#editerOrd" style="-fx-background-color: green;" text="editer " GridPane.rowIndex="3" />
+            <TextField fx:id="docteurOrd" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="maladeOrd" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="dateVord" editable="false" GridPane.columnIndex="3" />
+            <Text fx:id="codeOrd" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="medicaments" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox layoutX="257.0" layoutY="552.0" prefHeight="45.0" prefWidth="376.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#deleteMalade" text="supprimer" />
+            <Button mnemonicParsing="false" onAction="#voirOrdonance" text="voir ordonnance" />
+         </children>
+      </HBox>
+   </children>
+
+	<!-- TODO Add Nodes -->
+</AnchorPane>
